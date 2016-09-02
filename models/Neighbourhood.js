@@ -15,6 +15,12 @@ Neighbourhood.add({
 });
 
 /**
+ * Relationships
+ */
+Neighbourhood.relationship({ ref: 'Shop', path: 'shops', refPath: 'neighbourhood' });
+
+
+/**
  * Registration
  */
 Neighbourhood.register();
