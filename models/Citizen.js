@@ -10,9 +10,9 @@ var Citizen = new keystone.List('Citizen');
 // noinspection JSLastCommaInObjectLiteral
 
 Citizen.add({
-	username: { type: Types.Name, required: true, index: true },
-	firstName: { type: Types.Name, required: true, index: true },
-	lastName: { type: Types.Name, required: true, index: true },
+	username: { type: Types.Name, required: true, index: true, initial: false },
+	firstName: { type: Types.Name, required: true, index: true, initial: false },
+	lastName: { type: Types.Name, required: true, index: true, initial: false },
 	email: { type: Types.Email, initial: true, required: true, index: true },
 	password: { type: Types.Password, initial: true, required: true },
 	gender: { type: Types.Select, options: 'male, female, undefined' },
