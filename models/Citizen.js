@@ -7,10 +7,16 @@ var Types = keystone.Field.Types;
  */
 var Citizen = new keystone.List('Citizen');
 
+// noinspection JSLastCommaInObjectLiteral
+
 Citizen.add({
-	name: { type: Types.Name, required: true, index: true },
+	username: { type: Types.Name, required: true, index: true },
+	firstName: { type: Types.Name, required: true, index: true },
+	lastName: { type: Types.Name, required: true, index: true },
 	email: { type: Types.Email, initial: true, required: true, index: true },
 	password: { type: Types.Password, initial: true, required: true },
+	gender: { type: Types.Select, options: 'male, female, undefined' },
+	about: { type: Types.Textarea },
 }, 'Permissions', {
 	isAdmin: { type: Boolean, label: 'Can access Keystone', index: true },
 });
