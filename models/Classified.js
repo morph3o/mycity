@@ -12,7 +12,7 @@ var Classified = new keystone.List('Classified');
 Classified.add({
 	title: { type: Types.Text, initial: true, required: true, index: true },
 	type: { type: Types.Text, initial: true, required: true, index: true },
-	topic: { type: Types.Text, initial: true, required: true, index: true },
+	topics: { type: Types.Text, initial: true, required: true, index: true },
 	description: { type: Types.Textarea },
 	price: { type: Types.Money, format: '0.0,00' },
 	contact: { type: Types.Text, initial: true, required: true, index: true },
