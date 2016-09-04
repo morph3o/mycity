@@ -25,5 +25,4 @@ Classified.add({
 /**
  * Registration
  */
-Classified.defaultColumns = 'name, email, isAdmin';
 Classified.register();
