@@ -2,7 +2,7 @@ var keystone = require('keystone');
 var Types = keystone.Field.Types;
 
 /**
- * Citizen Model
+ * Classified Model
  * ==========
  */
 var Classified = new keystone.List('Classified');
