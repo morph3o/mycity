@@ -18,6 +18,7 @@ Neighbourhood.add({
  * Relationships
  */
 Neighbourhood.relationship({ ref: 'Shop', path: 'shops', refPath: 'neighbourhood' });
+Neighbourhood.relationship({ ref: 'Citizen', path: 'citizens', refPath: 'neighbourhood' });
 
 
 /**

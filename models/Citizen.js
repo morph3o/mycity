@@ -16,6 +16,7 @@ Citizen.add({
 	password: { type: Types.Password, initial: true, required: true },
 	gender: { type: Types.Select, initial: true, options: 'male, female, undefined' },
 	about: { type: Types.Textarea },
+	neighbourhood: { type: Types.Relationship, ref: 'Neighbourhood', index: true },
 }, 'Permissions', {
 	isAdmin: { type: Boolean, label: 'Can access Keystone', index: true },
 });
