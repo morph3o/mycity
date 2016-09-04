@@ -31,6 +31,7 @@ Citizen.schema.virtual('canAccessKeystone').get(function () {
  * Relationships
  */
 Citizen.relationship({ ref: 'Post', path: 'posts', refPath: 'author' });
+Citizen.relationship({ ref: 'Classified', path: 'classifieds', refPath: 'author' });
 
 
 /**
